@@ -6,7 +6,8 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 
 
-app = Flask(__name__)
+application= Flask(__name__)
+app=application
 ridge_model=pickle.load(open('models/newridge.pkl','rb'))
 std_scaler=pickle.load(open('models/newscaler.pkl','rb'))
 
